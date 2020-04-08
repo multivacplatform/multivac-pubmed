@@ -27,6 +27,7 @@ libraryDependencies ++= {
     "org.apache.spark" %% "spark-graphx" % sparkVer % "provided" withSources(),
     "org.apache.spark" %% "spark-yarn" % sparkVer % "provided" withSources(),
     "com.johnsnowlabs.nlp" %% "spark-nlp" % sparkNLP,
+    "com.databricks" %% "spark-xml" % "0.9.0",
     "com.typesafe" % "config" % "1.3.3"
   )
 }
