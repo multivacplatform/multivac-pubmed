@@ -82,4 +82,6 @@ project/plugins/project/
 
 metastore_db
 
-#resources/application.conf
+resources/application.conf
+output/**
+*.gz
