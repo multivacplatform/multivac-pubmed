@@ -5,7 +5,7 @@ echo "today is $now"
 
 #default value for Spark local mode
 MASTER="local[4]"
-INPUTPATH="data/pageviews/*.gz"
+INPUTPATH="data/tp.ncbi.nlm.nih.gov/pubmed/updatefiles/*.gz"
 OUTPUTPATH="data/output/parquet"
 JAR="target/scala-2.11/*.jar"
 MODE="client"
