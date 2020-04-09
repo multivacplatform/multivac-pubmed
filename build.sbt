@@ -33,6 +33,8 @@ libraryDependencies ++= {
 }
 
 assemblyMergeStrategy in assembly := {
+  case "META-INF/services/org.apache.spark.sql.sources.DataSourceRegister" => MergeStrategy.concat
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
   case x => MergeStrategy.first
 }
 
