@@ -35,6 +35,7 @@ echo "MODE $MODE"
 
 spark-submit \
 --class "Main" \
+--name "multivac-pubmed" \
 --master "$MASTER" \
 --deploy-mode "$MODE" \
 --driver-memory 4g \
