@@ -9,6 +9,10 @@ javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 licenses := Seq("Apache-2.0" -> url("https://opensource.org/licenses/Apache-2.0"))
 
+developers in ThisBuild:= List(
+  Developer(id="maziyarpanahi", name="Maziyar Panahi", email="maziyar.panahi@iscpif.fr", url=url("https://github.com/maziyarpanahi")),
+)
+
 import com.typesafe.sbt.packager.archetypes.JavaAppPackaging
 
 enablePlugins(JavaServerAppPackaging)
