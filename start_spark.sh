@@ -40,8 +40,9 @@ spark-submit \
 --deploy-mode "$MODE" \
 --driver-memory 4g \
 --executor-cores 5 \
---executor-memory 5g \
+--executor-memory 12g \
 --conf spark.dynamicAllocation.enabled=true \
+--conf spark.dynamicAllocation.maxExecutors=20 \
 --conf spark.conf.master.value="$MASTER" \
 --conf spark.conf.inputPath.value="$INPUTPATH" \
 --conf spark.conf.outputPath.value="$OUTPUTPATH" \
