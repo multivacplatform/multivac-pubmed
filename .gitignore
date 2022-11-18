@@ -85,3 +85,4 @@ metastore_db
 resources/application.conf
 output/**
 *.gz
+*.xml
